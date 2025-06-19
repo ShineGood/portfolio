@@ -1,0 +1,172 @@
+.contact {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 1rem;
+  background-color: rgba(28, 79, 245, 0.192);
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+h2 {
+  color: #021829;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  
+}
+
+h2::before,
+h2::after {
+  content: "*";
+  color: #6a1b9a;
+  margin: 0 0.5rem;
+}
+
+.mi {
+  font-size: larger;
+  color: black;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.success {
+  color: green;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  animation: fadeIn 0.4s ease-in;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  color: #1b1b1b;
+}
+
+input,
+textarea {
+  padding:1rem 2rem;
+  font-size: 1.1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  font-family: inherit;
+  background-color: #fff;
+  color:rgb(15, 15, 15);
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #0077cc;
+  box-shadow: 0 0 5px rgba(186, 85, 211, 0.5);
+}
+
+.errorInput {
+  border-color: #e74c3c;
+}
+
+.errorMsg {
+  color: #c91f0c;
+  font-size: 1rem;
+  margin-top: 0.25rem;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.buttonGroup button {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.submitBtn {
+  background-color: #0077cc;
+  color: white;
+}
+
+.submitBtn:hover {
+  background-color: #005fa3;
+  transform: translateY(-2px);
+}
+
+.resetBtn {
+  background-color: #6ebcf3;
+  color: white;
+}
+
+.resetBtn:hover {
+  background-color: #005fa3;
+  transform: translateY(-2px);
+}
+
+.footer {
+  background-color: #043464;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+}
+
+.footer a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Fade-in animation for feedback messages */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .buttonGroup {
+    flex-direction: column;
+  }
+
+  .buttonGroup button {
+    width: 100%;
+  }
+
+  .contact {
+    padding: 1rem;
+  }
+
+  input,
+  textarea {
+    font-size: 1rem;
+  }
+}
+
