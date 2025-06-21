@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import emailjs from '@emailjs/browser'
 import styles from './styles/contactstyle.module.css';
 import { validateForm } from '../utils/contactValidation';
 
@@ -40,17 +39,7 @@ const Contact = () => {
 
     if (!isValid) return;
 
-    try {
-      await emailjs.send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID!,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID!,
-        {
-          from_name: `${formData.firstname} ${formData.lastname}`,
-          reply_to: formData.email,
-          message: formData.message,
-        },
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY!
-      );
+    console.log('Form submitted:', formData);
 
       setSubmitted(true);
       setFormData({
@@ -61,10 +50,8 @@ const Contact = () => {
         message: '',
       });
       setErrors({});
-    } catch (error) {
-      console.error('EmailJS error:', error);
-      alert('There was an error sending your message.');
-    }
+      // Redirect to thank-you page
+  window.location.href = '/ThankYou';
   };
 
   type FieldName = 'firstname' | 'lastname' | 'phone' | 'email' | 'message';
@@ -105,6 +92,8 @@ const Contact = () => {
                   onChange={handleChange}
                   className={errors[field] ? styles.errorInput : ''}
                   placeholder={placeholders[field]}
+                  aria-invalid={!!errors[field]}
+                  aria-describedby={`error-${field}`}
                 />
               )}
               {errors[field] && <p className={styles.errorMsg}>{errors[field]}</p>}
@@ -134,16 +123,6 @@ const Contact = () => {
           </div>
         </form>
       </section>
-
-      <footer className={styles.footer}>
-          <a href="#">Back to the top</a>
-          <p>Thank you for visiting my resume page!</p>
-          <p>&copy; KOKOE FIAWOO. All rights reserved.</p>
-          <p>Feel free to reach out if you have any questions or would like to collaborate.</p>
-          <a href="mailto:kokoe_fiawoo@hotmail.com">Contact Me</a> |{' '}
-          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile">GitHub</a> |{' '}
-          <a href="https://linkedin.com/in/KokoeFiawoo" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        </footer>
       </>
   );
 };

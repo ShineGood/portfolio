@@ -5,8 +5,8 @@ const projects = [
     title: 'Personal Portfolio Website',
     description: 'A personal portfolio website to showcase my skills and projects. Designed and developed a fully responsive personal site with animated components and a clean UI.',
     technologies: 'HTML5, CSS3, JavaScript, React, GitHub Pages',
-    code: 'https://github.com/yourusername/portfolio',
-    demo: 'https://yourusername.github.io/portfolio',
+    code: 'https://github.com/ShineGood/portfolio',
+    demo: 'https://ShineGood.github.io/portfolio',
   },
   {
     title: 'Task Manager Web App',
@@ -34,9 +34,7 @@ const projects = [
     title: 'Recipe Finder App',
     description: 'Search and discover recipes based on ingredients or meal names with live API integration and responsive UI.',
     technologies: 'HTML5, CSS3, JavaScript, REST API',
-    code: 'https://github.com/yourusername/recipe-finder',
-    demo: 'https://yourusername.github.io/recipe-finder',
-  },
+    },
 ];
 
 type ProjectCardProps = {
@@ -54,8 +52,8 @@ const ProjectCard = ({title, description, technologies, code, demo }: ProjectCar
       <p>{description}</p>
       <p><strong>Technologies:</strong> {technologies}</p>
       <div className={styles.buttons}>
-        {code && <a href={code} target="_blank" rel="noopener noreferrer" className={styles.link}>View Code</a>}
-        {demo && <a href={demo} target="_blank" rel="noopener noreferrer" className={styles.demo}>Live Demo</a>}
+        {code && <a aria-label={`View source code for ${title}`} href={code} target="_blank" rel="noopener noreferrer" className={styles.link}>View Code</a>}
+        {demo && <a aria-label={`See live demo of ${title}`}href={demo} target="_blank" rel="noopener noreferrer" className={styles.demo}>Live Demo</a>}
       </div>
     </div>
   );
@@ -63,7 +61,6 @@ const ProjectCard = ({title, description, technologies, code, demo }: ProjectCar
 
 const Projects = () => {
   return (
-    <>
     <section className={styles.projects}>
       <h2>My Projects</h2>
       <div className={styles.grid}>
@@ -72,15 +69,6 @@ const Projects = () => {
         ))}
       </div>
     </section>
-      <footer className={styles.footer}>
-        <a href="#">Back to the top</a>
-        <p>Thank you for visiting my projects page!</p>
-        <p>&copy; Kokoe Fiawoo. All rights reserved.</p>
-        <a href="mailto:kokoe_fiawoo@hotmail.com">Contact Me</a> |
-        <a href="https://github.com/ShineGood" target="_blank" rel="noopener noreferrer">GitHub</a> |
-        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      </footer>
-    </>
   );
 };
 

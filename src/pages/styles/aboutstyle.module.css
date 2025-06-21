@@ -5,6 +5,8 @@
   margin: 0;
   line-height: 1.6;
   background-color: #f9f9f9;
+  animation: fadeInUp 3s ease-out;
+  transition: transform 0.3s ease;
 }
 
 .header {
@@ -18,9 +20,10 @@
 
 
 .header h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-left: 1rem;
   flex-grow: 1;
+  text-align: center;
 }
 
 
@@ -31,22 +34,28 @@
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
+  text-align: center;
 }
 
 .container img {
-  max-width: 75%;
+  max-width: 50%;
   border-radius: 50%;
   margin-bottom: 1rem;
 }
 
 .container h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
-  color: #003366;
+  color: #1d1b1d;
 }
 
 .bio p {
   margin-bottom: 1rem;
+  font-size: larger;
+}
+
+.bio h2 {
+  font-size: 3rem;
 }
 
 .skills {
@@ -94,13 +103,30 @@
   text-decoration: underline;
 }
 
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
     text-align: center;
   }
-
+  .container img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
 
   .skills ul {
     flex-direction: column;

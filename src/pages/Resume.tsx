@@ -20,21 +20,19 @@ const Resume = () => {
           View My Resume
         </button>
 
+        <a
+          href="../pdf/Kokoe-Fiawoo.pdf"
+          download="Kokoe-Fiawoo-Resume.pdf"
+          className={styles.button}
+        >
+          Download Resume
+        </a>
+
         <p style={{ marginTop: '2rem' }}>
           Feel free to contact me for any inquiries or opportunities.
         </p>
 
       </section>
-
-      <footer className={styles.footer}>
-          <a href="#">Back to the top</a>
-          <p>Thank you for visiting my resume page!</p>
-          <p>&copy; KOKOE FIAWOO. All rights reserved.</p>
-          <p>Feel free to reach out if you have any questions or would like to collaborate.</p>
-          <a href="mailto:kokoe_fiawoo@hotmail.com">Contact Me</a> |{' '}
-          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile">GitHub</a> |{' '}
-          <a href="https://linkedin.com/in/KokoeFiawoo" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      </footer>
     </>
   );
 };

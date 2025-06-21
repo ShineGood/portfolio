@@ -25,7 +25,8 @@ const NavBar = () => {
         <span />
       </button>
 
-      <ul className={`${styles.navLinks} ${menuOpen ? styles.open : ''}`}>
+      <ul 
+      className={`${styles.navLinks} ${menuOpen ? styles.open : ''}`}>
         <li>
           <NavLink to="/" onClick={closeMenu} className={({ isActive }) => isActive ? styles.active : ''}>
             Home

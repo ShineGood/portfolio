@@ -6,6 +6,8 @@ import Resume from './pages/Resume';
 import Contact from './pages/Contact';
 import Gallery from './components/Gallery';
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
+import ThankYou from './components/ThankYou';
 import './App.css'
 
 function App() {
@@ -20,7 +22,9 @@ function App() {
       <Route path="/projects" element={<Projects />} />
       <Route path="/gallery" element={<Gallery />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/thankyou" element={<ThankYou/>}/>
     </Routes>
+    <Footer/>
   </BrowserRouter>
   );
 }

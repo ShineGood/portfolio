@@ -8,6 +8,9 @@
   background: white;
   color: #333;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  border-radius: 5%;
+  padding: 2rem 1rem;
 }
 
 .heading {
@@ -21,7 +24,7 @@
   margin-bottom: 1.5rem;
   color: #333;
 }
-.button {
+.button{
   background-color: rgb(49, 48, 48);
   color: white;
   border: none;

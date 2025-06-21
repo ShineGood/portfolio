@@ -21,6 +21,9 @@
   list-style: none;
   display: flex;
   gap: 1.5rem;
+  transition: max-height 0.4s ease;
+  transition: right 0.3s ease-in-out, opacity 0.3s ease-in-out;
+ 
 }
 
 .navLinks a {
@@ -28,6 +31,8 @@
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s ease;
+  position:relative
+
 }
 
 .navLinks a:hover {
@@ -36,6 +41,26 @@
 
 .active {
   border-bottom: 2px solid #ff57bf;
+}
+
+.navLinks a.active::after {
+  width: 100%;
+}
+
+.navLinks a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #ff57bf;
+  transition: width 0.3s ease;
+}
+
+.navLinks a:focus {
+  outline: 2px dashed #f8d239;
+  outline-offset: 4px;
 }
 
 /* Hamburger Button Styles */
@@ -75,6 +100,10 @@
   transform: rotate(-45deg);
   top: 8px;
   position: absolute;
+}
+.hamburger.active span:nth-child(1),
+.hamburger.active span:nth-child(3) {
+  top: 9px;
 }
 
 /* Responsive Styles */

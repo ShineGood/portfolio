@@ -16,7 +16,7 @@ const Home = () => {
             </div>
             <img
               src="/images/photo-profil.jpg"
-              alt="Profile"
+              alt="Portrait of Kokoe Fiawoo"
               className={styles.profileImage}
             />
           </div>
@@ -49,22 +49,6 @@ const Home = () => {
           </section>
 
         </main>
-
-        <footer className={styles.footer}>
-        {/*  Brand/logo and back to the top  */}
-        <a className={styles.logoBrand} href="#top">
-          <img src="/images/SHADY.png" alt="Brand logo" />
-        </a>
-        <p className={styles.footerContent}> &copy; Copyright 2025
-           My Portfolio Kokoe Fiawoo. All rights reserved.</p>
-        <p>Thank you for visiting my portfolio!</p>
-        <p>Feel free to reach out if you have any questions
-           or would like to collaborate.</p>
-        <a href="mailto:kokoe_fiawoo@hotmail.com">Contact Me</a> |{' '}
-        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a> |{' '}
-        <a href="https://linkedin.com/in/KokoeFiawoo" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-    </footer>
-
         </>
     )
 };

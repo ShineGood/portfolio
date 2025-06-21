@@ -5,12 +5,12 @@ const About: React.FC = () => {
   return (
     <div className={styles.about}>
       <header className={styles.header}>
-        <h1>Welcome to My Portfolio</h1>
+        <h4>Welcome to My Portfolio</h4>
       </header>
 
       <div className={styles.container}>
         <div style={{ textAlign: 'center' }}>
-          <img src="../images/photo-profil.jpg" alt="kokoe fiawoo" />
+          <img src="../images/photo-profil.jpg" alt="kokoe fiawoo profile picture" />
           <h1>Hi, I'm Kokoe Fiawoo</h1>
         </div>
 
@@ -53,27 +53,19 @@ const About: React.FC = () => {
         </div>
       </div>
 
-      <div className={styles.skills}>
-        <h2>My Skills</h2>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>TypeScript</li>
-          <li>React</li>
-          <li>Node.js</li>
-        </ul>
-      </div>
-
-      <footer className={styles.footer}>
-        <a href="#">Back to the top</a>
-        <p>Thank you for visiting my about me page!</p>
-        <p>&copy; KOKOE FIAWOO. All rights reserved.</p>
-        <p>Feel free to reach out if you have any questions or would like to collaborate.</p>
-        <a href="mailto:kokoe_fiawoo@hotmail.com">Contact Me</a> |{' '}
-        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a> |{' '}
-        <a href="https://linkedin.com/in/KokoeFiawoo" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      </footer>
+      <section aria-label="skills">
+        <div className={styles.skills}>
+          <h2>My Skills</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+          </ul>
+        </div>
+      </section>
     </div>
   );
 };

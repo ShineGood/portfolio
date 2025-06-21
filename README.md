@@ -1,54 +1,109 @@
-# React + TypeScript + Vite
+# 🌟 Kokoe Fiawoo – Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website! This site was developed as part of my final term project for the Web Development course. It showcases my skills, projects, resume, and contact information in a clean, responsive layout using modern web technologies.
 
-Currently, two official plugins are available:
+## 📌 Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This portfolio represents who I am as a developer and creative thinker. The goal was to demonstrate proficiency in front-end development, including:
+- HTML5, CSS3, JavaScript
+- TypeScript and React
+- Responsive design (Flexbox/Grid)
+- DOM manipulation
+- Form validation
+- Clean UI and accessibility
 
-## Expanding the ESLint configuration
+The site includes multiple sections/pages:
+- **Home** – Quick intro and welcome message
+- **About** – Biography, interests, and background
+- **Resume** – Interactive and downloadable resume
+- **Projects** – Real-world apps and assignments
+- **Gallery** – Photo gallery with modal slideshow
+- **Contact** – Custom form with validation
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🔧 Technologies Used
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- React + Vite + TypeScript
+- HTML5, CSS3 (Flexbox & Grid)
+- JavaScript for interactivity
+- Git & GitHub for version control
+- Netlify (or GitHub Pages) for deployment
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📁 Folder Structure
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+src/
+├── components/ # Reusable components (NavBar, Footer, etc.)
+├── pages/ # Main content pages (Home, About, Resume, etc.)
+├── styles/ # CSS modules for scoped styling
+├── assets/ # Images and static assets
+├── utils/ # Utility functions (e.g., form validation)
+└── App.tsx # Main app component
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+
+## ✅ Key Features
+
+- Mobile-first responsive design
+- Accessible navigation bar with hamburger menu
+- Form validation with real-time feedback
+- PDF resume viewer + download
+- Interactive image gallery with keyboard controls
+- Project cards with links to GitHub and live demos
+
+## 📷 Live Demo
+
+🔗 **[View the Live Site](https://your-username.netlify.app)**  
+(Replace with your actual Netlify or GitHub Pages link)
+
+## 🧠 What I Learned
+
+Through this project, I gained hands-on experience with:
+- Structuring and organizing React apps using functional components
+- Styling with CSS Modules
+- Managing component state and interactivity
+- Validating form inputs with TypeScript
+- Handling keyboard events for accessibility
+- Deploying to Netlify and managing public GitHub repos
+
+## 📥 How to Use This Repo
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ShineGood/portfolio.git
+   cd my-portfolio
+   ```
+
+2. Install dependencies:
+  ```bash
+    npm install
+
+3. Run locally:
+  ```bash
+    npm run dev
+
+## 📝 License
+
+MIT License
+
+Copyright (c) 2025 Kokoe Fiawoo
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the “Software”), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+
+Thanks for visiting my portfolio! Feel free to connect with me:
+
+📧 emerode.shine@gmail.com

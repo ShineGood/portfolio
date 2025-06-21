@@ -43,6 +43,10 @@ const Gallery = () => {
     <>
       <section className={styles.gallery}>
         <h2 className={styles.title}>Photo Gallery</h2>
+        <p className={styles.galleryintro}>
+          Here's a collection of all the things I love, 
+          captured in pictures!
+        </p>
         <div className={styles.grid}>
           {images.map((src, index) => (
             <div
@@ -77,14 +81,6 @@ const Gallery = () => {
           </div>
         )}
       </section>
-      <footer className={styles.footer}>
-        <a href="#">Back to the top</a>
-        <p>Thank you for visiting my gallery page!</p>
-        <p>&copy; Kokoe Fiawoo. All rights reserved.</p>
-        <a href="mailto:kokoe_fiawoo@hotmail.com">Contact Me</a> |
-        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a> |
-        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      </footer>
     </>
   );
 };
