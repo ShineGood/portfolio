@@ -6,7 +6,7 @@ const projects = [
     description: 'A personal portfolio website to showcase my skills and projects. Designed and developed a fully responsive personal site with animated components and a clean UI.',
     technologies: 'HTML5, CSS3, JavaScript, React, GitHub Pages',
     code: 'https://github.com/ShineGood/portfolio',
-    demo: 'https://ShineGood.github.io/portfolio',
+    demo: 'https://portfoliokokoe.netlify.app/',
   },
   {
     title: 'Task Manager Web App',

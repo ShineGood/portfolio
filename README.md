@@ -50,7 +50,7 @@ src/
 
 ## 📷 Live Demo
 
-🔗 **[View the Live Site](https://your-username.netlify.app)**  
+🔗 **[View the Live Site](https://portfoliokokoe.netlify.app/)**  
 (Replace with your actual Netlify or GitHub Pages link)
 
 ## 🧠 What I Learned
@@ -74,6 +74,7 @@ Through this project, I gained hands-on experience with:
 2. Install dependencies:
   ```bash
     npm install
+    ```
 
 3. Run locally:
   ```bash
