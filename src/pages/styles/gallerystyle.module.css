@@ -8,6 +8,13 @@
 
 }
 
+.dragging {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  opacity: 0.9;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
 .title {
   font-size: 3rem;
   margin-bottom: 1.5rem;

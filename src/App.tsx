@@ -8,6 +8,7 @@ import Gallery from './components/Gallery';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import ThankYou from './components/ThankYou';
+import Dragdropgal from './components/dragdopgal'
 import './App.css'
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Route path="/resume" element={<Resume />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/gallery" element={<Gallery />} />
+      <Route path="/dragdropgal" element={<Dragdropgal />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/thankyou" element={<ThankYou/>}/>
     </Routes>

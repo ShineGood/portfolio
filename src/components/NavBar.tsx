@@ -53,6 +53,11 @@ const NavBar = () => {
           </NavLink>
         </li>
         <li>
+          <NavLink to="/dragdropgal" onClick={closeMenu} className={({ isActive }) => isActive ? styles.active : ''}>
+            Drag and Drop Gallery
+          </NavLink>
+        </li>
+        <li>
           <NavLink to="/contact" onClick={closeMenu} className={({ isActive }) => isActive ? styles.active : ''}>
             Contact
           </NavLink>
