@@ -78,6 +78,7 @@ Through this project, I gained hands-on experience with:
 3. Run locally:
   ```bash
     npm run dev
+  ```
 
 ## 📝 License
 
