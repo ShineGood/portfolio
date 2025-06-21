@@ -1,4 +1,5 @@
 import styles from './styles/homestyle.module.css';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
@@ -30,7 +31,7 @@ const Home = () => {
               and problem-solving.I have hands-on experience in full-stack development.
             </p>
             <br />
-            <a className={styles.button} href="/about">More about me</a>
+            <link className={styles.button} href="/about">More about me</link>
             <br />
             </div>
             <img
@@ -43,7 +44,7 @@ const Home = () => {
           <div className={styles.resumeSection}>
             <h1>Take a look at my resume</h1>
             <br />
-            <a className={styles.button} href="/resume">See full resume</a>
+            <link className={styles.button} href="/resume">See full resume</link>
 
           </div>
           </section>
