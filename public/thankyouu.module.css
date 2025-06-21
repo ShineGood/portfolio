@@ -1,3 +1,30 @@
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
+  
+}
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #10033f;
+text-align: center;
+background-color: #a4b3f360; 
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+}
 /* === NAVBAR STYLES === */
 
 .navbar {
@@ -7,7 +34,7 @@
   padding: 1rem 2rem;
   background-color: #0077cc;
   color: white;
-  position: sticky;
+  position:sticky;
   top: 0;
   z-index: 100;
 }
@@ -38,7 +65,7 @@
   color: #f8d239;
 }
 
-.active {
+.navLinks a.active {
   border-bottom: 2px solid #ff57bf;
 }
 
@@ -61,6 +88,21 @@
   outline: 2px dashed #f8d239;
   outline-offset: 4px;
 }
+
+.foot {
+    margin-top: 2rem;
+    border-top: 1px solid #ccc;
+    padding: 1rem;
+    font-size: 0.9rem;
+    background-color: #0c1269;
+    color: rgb(223, 192, 192);
+}
+.logo-brand img {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+
 
 /* === HAMBURGER MENU === */
 
@@ -136,25 +178,15 @@
 
 /* === FOOTER STYLES === */
 
-.footer {
-  margin: 0.5rem 0;
-  font-size: medium;
-  background-color: #143250;
-  color: white;
-  text-align: center;
-  padding: 2rem 1rem;
-  font-weight: bold;
-  margin-top: 1rem;
-}
 
-.footer a {
+.foot a {
   color: #ca8ef0;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
-.footer a:hover {
+.foot a:hover {
   color: #c8ee6f;
   text-decoration: underline;
 }
@@ -165,13 +197,8 @@
   margin-bottom: 0.5rem;
 }
 
-.logoBrand img {
+.logo-Brand img {
   height: 40px;
   border-radius: 50%;
   padding: 0.3rem;
-}
-
-/* === OPTIONAL: SMOOTH SCROLL === */
-html {
-  scroll-behavior: smooth;
 }
