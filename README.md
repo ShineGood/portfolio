@@ -74,7 +74,7 @@ Through this project, I gained hands-on experience with:
 2. Install dependencies:
   ```bash
     npm install
-    ```
+  ```
 
 3. Run locally:
   ```bash
