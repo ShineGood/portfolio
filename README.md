@@ -50,7 +50,7 @@ src/
 
 ## 📷 Live Demo
 
-🔗 **[View the Live Site](https://portfoliokokoe.netlify.app/)**  
+🔗 **[View the Live Site](https://porfoliokokoe.netlify.app/)**  
 (Replace with your actual Netlify or GitHub Pages link)
 
 ## 🧠 What I Learned
