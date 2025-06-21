@@ -30,7 +30,7 @@ const Home = () => {
               and problem-solving.I have hands-on experience in full-stack development.
             </p>
             <br />
-            <link className={styles.button} href="/about">More about me</link>
+            <a className={styles.button} href="/about">More about me</a>
             <br />
             </div>
             <img
@@ -43,7 +43,7 @@ const Home = () => {
           <div className={styles.resumeSection}>
             <h1>Take a look at my resume</h1>
             <br />
-            <link className={styles.button} href="/resume">See full resume</link>
+            <a className={styles.button} href="/resume">See full resume</a>
 
           </div>
           </section>
