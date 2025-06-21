@@ -8,7 +8,7 @@ import Gallery from './components/Gallery';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import ThankYou from './components/ThankYou';
-import Dragdropgal from './components/dragdopgal'
+import Dragdropgal from './components/Dragdropgal';
 import './App.css'
 
 function App() {
