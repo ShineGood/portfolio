@@ -48,7 +48,7 @@ const About: React.FC = () => {
         <h2>Contact Me</h2>
           <p>
             Feel free to reach out if you have any questions or just want to chat about web development!
-            You can reach me at: <br /><a href="mailto:kokoe_fiawoo@hotmail.com">reach out</a>
+            You can reach me at: <br /><a href="mailto:emerode.shine@gmail.com">reach out</a>
           </p>
         </div>
       </div>

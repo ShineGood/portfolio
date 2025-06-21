@@ -51,7 +51,7 @@ const Contact = () => {
       });
       setErrors({});
       // Redirect to thank-you page
-  window.location.href = '/ThankYou';
+  window.location.href = 'thankyou.html';
   };
 
   type FieldName = 'firstname' | 'lastname' | 'phone' | 'email' | 'message';
