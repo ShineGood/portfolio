@@ -28,6 +28,13 @@ const Resume = () => {
           Download Resume
         </a>
 
+        <iframe
+          src="../pdf/Kokoe fiawoo resume general.pdf"
+          title="Resume"
+          className={styles.iframe}
+          style={{ height: '200px', width: '300px' }}
+        ></iframe>
+
         <p style={{ marginTop: '2rem' }}>
           Feel free to contact me for any inquiries or opportunities.
         </p>
