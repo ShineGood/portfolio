@@ -16,6 +16,7 @@ const Resume = () => {
 
         <p>Click the button below to view my resume in a new tab.</p>
         
+        
         <button onClick={openResume} className={styles.button}>
           View My Resume
         </button>
@@ -32,8 +33,12 @@ const Resume = () => {
           src="../pdf/Kokoe fiawoo resume general.pdf"
           title="Resume"
           className={styles.iframe}
-          style={{ height: '200px', width: '300px' }}
+          style={{ border: "none", marginTop: '2rem' }}
+          width="80%"
+          height="600px"
+
         ></iframe>
+      
 
         <p style={{ marginTop: '2rem' }}>
           Feel free to contact me for any inquiries or opportunities.
