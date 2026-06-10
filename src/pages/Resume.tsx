@@ -2,7 +2,7 @@ import styles from './styles/resume.module.css';
 
 const Resume = () => {
     const openResume = () => {
-    window.open('../pdf/Kokoe-Fiawoo.pdf', '_blank');
+    window.open('../pdf/kokoe_fiawoo_Resume__.pdf', '_blank');
   };
 
   return (
@@ -21,8 +21,8 @@ const Resume = () => {
         </button>
 
         <a
-          href="../pdf/Kokoe-Fiawoo.pdf"
-          download="Kokoe-Fiawoo-Resume.pdf"
+          href="../pdf/kokoe_fiawoo_Resume__.pdf"
+          download="kokoe_fiawoo_Resume__.pdf"
           className={styles.button}
         >
           Download Resume
