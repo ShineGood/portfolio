@@ -15,7 +15,7 @@ const Footer = () => {
       <p>Feel free to reach out if you have any questions or would like to collaborate.</p>
       <a href="mailto:emerode.shine@gmail.com">Contact Me</a> |{' '}
       <a href="https://github.com/ShineGood" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile">GitHub</a> |{' '}
-      <a href="https://linkedin.com/in/kokoe-fiawoo-b8369a1a1" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/kokoe-fiawoo-b8369a1a1" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </footer>
   );
 };
